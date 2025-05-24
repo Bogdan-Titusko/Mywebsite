@@ -1,23 +1,94 @@
+
+   
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Простенький сайт</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Демонтаж и Ремонтные Работы</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+
+    header {
+      background: url('https://source.unsplash.com/1600x400/?construction') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: #222;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Асаламалейкум шерсть!</h1>
+    <h1>Демонтаж и Ремонтные Работы</h1>
+    <p>Профессиональный демонтаж и ремонт под ключ</p>
+     <a href="https://image.mel.fm/i/F/FnJui0yja4/590.jpg" class="button">Жмякни  на меня</a>
+
   </header>
 
-  <main>
-    <p>Это пример твоего бомбчиеского сайта.</p>
-    <a href="https://image.mel.fm/i/F/FnJui0yja4/590.jpg" class="button">Жмякни  на меня</a>
-  </main>
+  <section>
+    <h2>Наши услуги</h2>
+    <p>Мы предлагаем полный спектр услуг по демонтажу, ремонту и отделке. Наша команда профессионалов гарантирует качественное выполнение работ в срок.</p>
+  </section>
+
+  <section>
+    <h2>Галерея</h2>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/400x300/?demolition" alt="Демонтаж">
+      <img src="https://source.unsplash.com/400x300/?renovation" alt="Ремонт">
+      <img src="https://source.unsplash.com/400x300/?construction,worker" alt="Строительные работы">
+      <img src="https://source.unsplash.com/400x300/?tools,construction" alt="Инструменты">
+    </div>
+  </section>
 
   <footer>
-    <p>&copy; 2025год до нашей эры т</p>
+    &copy; 2025 Демонтаж и Ремонтные Работы. Все права защищены.
   </footer>
+
 </body>
 </html>
